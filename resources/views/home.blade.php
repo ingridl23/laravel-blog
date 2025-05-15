@@ -1,16 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <div class="max-w-7xl  mx-auto px-4">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <h1> hola pagina principal</h1>
 
-    <title>Laravel 2</title>
-</head>
 
-<body>
+        <x-alert type="success" class="mb-4">
+            <x-slot name="title">
+                juan
+            </x-slot>
+            contenido der la alerta
+        </x-alert>
 
-    <h1> hola pagina principal</h1>
+        <p> welcome</p>
+    </div>
+        -->
+@extends('layouts.app')
+
+
+
+
+
+@section('content')
+    <div class="max-w-7xl  mx-auto px-4">
+
+        <h1> hola pagina principal</h1>
+
+
+        <x-alert type="success" class="mb-4">
+            <x-slot name="title">
+                juan
+            </x-slot>
+            contenido der la alerta
+        </x-alert>
+
+        <p> welcome</p>
+    </div>
+@endsection
+
+
+
 </body>
 
 </html>

@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
 
     /*funcion cuando solo el controlador contenga una unica funcion */
-    public function _invoke()
+    public function invoke()
     {
         return view("home");
     }

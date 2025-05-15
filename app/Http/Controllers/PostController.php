@@ -8,7 +8,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        return view("posts.index");
+        return view('posts.index');
     }
 
 
@@ -23,7 +23,7 @@ class PostController extends Controller
     public function show($id)
     {
 
-        //compact("id");
-        return view("posts.show", ["post" => $id]);
+        // compact("id");
+        return view("posts.show", ["id" => $id]);
     }
 }

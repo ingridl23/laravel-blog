@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel show</title>
+    <title>Laravel 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-
-    <h1>aca se mostrara el post nro : {{ $id }}</h1>
+    <header> </header>
+    @yield('content')
 </body>
 
 </html>

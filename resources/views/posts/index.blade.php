@@ -11,6 +11,8 @@
 <body>
 
     <h1> aqui se mostrara todos los posts</h1>
+
+
 </body>
 
 </html>
