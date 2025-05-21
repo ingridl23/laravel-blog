@@ -1,43 +1,23 @@
-<!-- <div class="max-w-7xl  mx-auto px-4">
-
-        <h1> hola pagina principal</h1>
-
-
-        <x-alert type="success" class="mb-4">
-            <x-slot name="title">
-                juan
-            </x-slot>
-            contenido der la alerta
-        </x-alert>
-
-        <p> welcome</p>
-    </div>
-        -->
 @extends('layouts.app')
 
-
-
-
-
 @section('content')
-    <div class="max-w-7xl  mx-auto px-4">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-        <h1> hola pagina principal</h1>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-
-        <x-alert type="success" class="mb-4">
-            <x-slot name="title">
-                juan
-            </x-slot>
-            contenido der la alerta
-        </x-alert>
-
-        <p> welcome</p>
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 @endsection
-
-
-
-</body>
-
-</html>

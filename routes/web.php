@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
-
+//use App\Http\Controllers\ProyectoController;
 
 Route::get('/', [HomeController::class, "invoke"]);
 
@@ -12,7 +12,12 @@ Route::get('/posts/create', [PostController::class, "create"]);
 
 Route::get('/posts/{id}', [PostController::class, "show"]);
 
-
+/*
+Route::resource("/proyectos", [ProyectoController::class]);
+ *
+ *
+ * me falta hacer la conexion a la base para que funcione correctamente
+ */
 /*
 casting
 
