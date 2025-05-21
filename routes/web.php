@@ -5,9 +5,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 //use App\Http\Controllers\ProyectoController;
 
-Route::get('/', [HomeController::class, "invoke"]);
+Route::get('/', [HomeController::class, "invoke"]); //home del portafolio, este seria nuestro index
 
-Route::get('/posts', [PostController::class, "index"]);
+Route::get('/posts', [PostController::class, "index"]); //quedo index pero no es el index
 Route::get('/posts/create', [PostController::class, "create"]);
 
 Route::get('/posts/{id}', [PostController::class, "show"]);
