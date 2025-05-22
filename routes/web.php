@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 //use App\Http\Controllers\ProyectoController;
+use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/', [HomeController::class, "invoke"]); //home del portafolio, este seria nuestro index
 
@@ -11,6 +12,11 @@ Route::get('/posts', [PostController::class, "index"]); //quedo index pero no es
 Route::get('/posts/create', [PostController::class, "create"]);
 
 Route::get('/posts/{id}', [PostController::class, "show"]);
+
+Route::get("/login", [LoginController::class, "login"]);
+
+
+
 
 /*
 Route::resource("/proyectos", [ProyectoController::class]);

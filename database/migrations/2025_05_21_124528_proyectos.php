@@ -16,9 +16,9 @@ class Proyectos extends Migration
         Schema::create("proyectos", function (Blueprint $table) {
             $table->bigIncrements("id");
             $table->string("nombre");
-            $table->strings("imagen");
-            $table->strings("descripcion");
-            $table->strings("url");
+            $table->string("imagen");
+            $table->string("descripcion");
+            $table->string("url");
 
             $table->timestamps();
         });
